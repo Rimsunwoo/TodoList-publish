@@ -28,11 +28,11 @@ function TodoSection() {
   };
   return (
     <div>
-      {[true, false].map((bool) => {
+      {[false, true].map((bool) => {
         return (
           <SectionContainer key={bool}>
             <h1 style={{ fontSize: "22px", fontWeight: "900" }}>
-              {bool ? "할 거..🔥" : " 한 거..🎉"}
+              {bool ? "한 거..🎉" : "할 거..🔥"}
             </h1>
             <TodoCardContainer>{onFilterTodo(bool)}</TodoCardContainer>
           </SectionContainer>
